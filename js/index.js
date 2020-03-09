@@ -129,3 +129,28 @@ mainContent[4].querySelector("p").textContent =
 
 let middlePic = document.getElementById("middle-img");
 middlePic.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+//contact
+
+let contactInfo = document.querySelector(".contact");
+
+contactInfo.getElementsByTagName("h4")[0].textContent =
+  siteContent["contact"]["contact-h4"];
+contactInfo.getElementsByTagName("p")[0].textContent =
+  siteContent["contact"]["address"];
+contactInfo.getElementsByTagName("p")[1].textContent =
+  siteContent["contact"]["phone"];
+contactInfo.getElementsByTagName("p")[2].textContent =
+  siteContent["contact"]["email"];
+
+//footer
+
+let footerInfo = document.querySelector("footer");
+footerInfo.textContent = "Copyright Great Idea! 2018";
+
+//extra styling (stretch)
+document.querySelector("nav").style.background = "#7FFFD4";
+document.querySelector("nav").style.borderRadius = "5px";
+document.querySelector("nav").style.padding = "10px";
+document.querySelector("button").style.borderRadius = "5px";
+document.querySelector("body").style.backgroundColor = "#F5F5F5";
