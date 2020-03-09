@@ -97,3 +97,35 @@ button1.textContent = "Get Started";
 
 let logo1 = document.getElementById("cta-img");
 logo1.setAttribute("src", siteContent["cta"]["img-src"]);
+
+//main-content
+
+let mainContent = document.querySelectorAll(".text-content");
+
+mainContent[0].querySelector("h4").textContent =
+  siteContent["main-content"]["features-h4"];
+mainContent[0].querySelector("p").textContent =
+  siteContent["main-content"]["features-content"];
+
+mainContent[1].querySelector("h4").textContent =
+  siteContent["main-content"]["about-h4"];
+mainContent[1].querySelector("p").textContent =
+  siteContent["main-content"]["about-content"];
+
+mainContent[2].querySelector("h4").textContent =
+  siteContent["main-content"]["services-h4"];
+mainContent[2].querySelector("p").textContent =
+  siteContent["main-content"]["services-content"];
+
+mainContent[3].querySelector("h4").textContent =
+  siteContent["main-content"]["product-h4"];
+mainContent[3].querySelector("p").textContent =
+  siteContent["main-content"]["product-content"];
+
+mainContent[4].querySelector("h4").textContent =
+  siteContent["main-content"]["vision-h4"];
+mainContent[4].querySelector("p").textContent =
+  siteContent["main-content"]["vision-content"];
+
+let middlePic = document.getElementById("middle-img");
+middlePic.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
