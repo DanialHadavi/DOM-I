@@ -88,9 +88,10 @@ mainNav2.append(newNavItem2);
 newNavItem2.style.color = "green";
 
 //header
-
-let header1 = document.querySelector("h1");
-header1.textContent = siteContent["cta"]["h1"];
+let h1Var = document.querySelector("h1");
+h1Var.innerHTML = "DOM <br>Is<br> Awesome";
+//let header1 = document.querySelector("h1");
+//header1.textContent = siteContent["cta"]["h1"];
 
 let button1 = document.querySelector("button");
 button1.textContent = "Get Started";
